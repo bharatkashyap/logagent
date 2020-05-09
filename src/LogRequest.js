@@ -40,8 +40,8 @@ function LogRequest(props) {
                     }
                 }) 
             }, 
-        5000)
-    }, [props.db, props.name, props.url])
+        props.delay)
+    }, [props.db, props.name, props.url, props.delay])
 
     return (
         <div>

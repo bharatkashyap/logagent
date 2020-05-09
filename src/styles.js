@@ -14,6 +14,38 @@ export const Heading = styled.div`
     }
 `
 
+export const Button = styled.button`
+    outline: none;
+    border: none;
+    background-color: #282C34;
+    color: #FFF;
+    padding: 1rem 0.6rem;
+    @media (max-width: 420px) {
+        padding: 0.5rem 0.3rem;
+    }
+    margin: 0.25rem;
+    height: 45px;
+    width: 135px;
+    @media (min-width: 768px) {
+        height: 60px;
+        width: 180px;
+    }
+    font-size: 0.8rem;
+    @media (min-width: 768px) {
+        font-size: 1rem;
+    }
+    color: #CCC;
+    text-align: center;
+    transition: all 0.1s ease-in;
+    &:focus {
+        ouline: none;
+    }
+    &:hover {
+        cursor: pointer;
+        box-shadow: 0 0 1px 1px #000;
+    }
+`
+
 export const Grid = styled.table`
     border-collapse: separate;
     border-spacing: 0.5rem;
