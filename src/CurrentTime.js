@@ -19,7 +19,7 @@ class CurrentTime extends React.Component {
     componentDidMount() {
       this.interval = setInterval(
         () => this.now(),
-        1000
+        1
       );
     }
 

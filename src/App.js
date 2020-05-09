@@ -17,6 +17,7 @@ const apis =
 function App() {
 
   const [db, setDb] = useState(null);
+  
 
   useEffect(() => {
     
@@ -30,6 +31,7 @@ function App() {
     }
 }, [])
 
+
   return (
     <div className="App">
       <header className="App-header">
@@ -37,7 +39,7 @@ function App() {
       </header>
       <div className="App-grid">
         {apis.map( (api, index) => {
-          return <LogRequest key={index} url={api.url} name={api.name} db={db} run={api.runs} delay={api.delay}></LogRequest>
+          return <LogRequest key={index} url={api.url} name={api.name} db={db} delay={api.delay}></LogRequest>
         }) 
         }
       </div>
